@@ -7,7 +7,7 @@ This project was to a Javascript test.
 - Drawing circles using **HTML Canvass** element
 
 ####Preview
-![reactjs-bulletin-app screenshot](https://github.com/maciejk77/)
+![yf-test screenshot](https://github.com/maciejk77/yf-test/blob/master/img/screenshot.png)
 
 
 
