@@ -24,9 +24,9 @@ function createCircle() {
 }
 
 function replaceLetters() {
-  var entryChars = document.getElementById('letters').value;
-  if(entryChars !== '') {
-    var letterArray = entryChars.split('')
+  var formLetters = document.getElementById('letters').value;
+  if(formLetters !== '') {
+    var letterArray = formLetters.split('');
     returnedLetter = letterArray.shift();
     var text = document.getElementById('letters').value;  
     text = text.substr(1);
@@ -36,9 +36,9 @@ function replaceLetters() {
 }
 
 function pushToCircle(returnedLetter) {
-  var c = document.getElementById('myCanvas');
-  var ctx = c.getContext("2d");
-  ctx.font = "30px Verdana black";
+  var canvas = document.getElementById('myCanvas');
+  var ctx = canvas.getContext("2d");
+  ctx.font = "30px Verdana";
   ctx.fillStyle = "black"; 
   ctx.fillText(returnedLetter, xyCoord[0] - 10 , xyCoord[1] + 10);
   xyCoord.shift();
@@ -50,4 +50,14 @@ el1.addEventListener('click', storePosition, false);
 
 var el2 = document.getElementById('letters');      
 el2.addEventListener('click', replaceLetters, false); 
+
+/* 
+
+To be done:
+
+- to set canvass as equal to viewport?
+- circles cannot overlap
+
+
+*/
 
