@@ -4,7 +4,7 @@ This project was to a Javascript test.
 
 - XY positioning (**pageX/pageY**)
 - Setting up **event listeners**
-- Drawing circles using **HTML Canvass** element
+- Drawing circles using **HTML Canvas** element
 
 ####Preview
 ![yf-test screenshot](https://github.com/maciejk77/yf-test/blob/master/img/screenshot.png)
