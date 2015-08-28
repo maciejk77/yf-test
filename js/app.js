@@ -1,12 +1,11 @@
 var xyCoord = [];
-var msg;
 
 function storePosition(event) {                
   x = event.pageX;                      
   y = event.pageY;
   xyCoord.push(x);
   xyCoord.push(y);
-  console.log(xyCoord);
+  // console.log(xyCoord);
   createCircle();
 }
 
@@ -33,6 +32,9 @@ function displayLetters() {
 
 function replaceLetters() {
   var entryChars = document.getElementById('letters').value;
+  if(entryChars === '') {
+    console.log('first click');
+  } else {
   var letterArray = entryChars.split('')
   returnedLetter = letterArray.shift();
 
@@ -40,10 +42,21 @@ function replaceLetters() {
   text = text.substr(1);
   document.getElementById('letters').value = text;
 
-
-  console.log(returnedLetter);
-  console.log(letterArray);
+  pushToCircle(returnedLetter);
+  }
+  // console.log(returnedLetter);
+  // console.log(letterArray);
   
+}
+
+function pushToCircle(returnedLetter) {
+  console.log(returnedLetter);
+
+  var c = document.getElementById('myCanvas');
+  var ctx = c.getContext("2d");
+  ctx.font = "30px Verdana black";
+  ctx.fillStyle = "black"; 
+  ctx.fillText(returnedLetter, 100, 100);
 }
 
 var el = document.getElementById('circles');      
