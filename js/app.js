@@ -41,8 +41,7 @@ function pushToCircle(returnedLetter) {
   ctx.font = "30px Verdana";
   ctx.fillStyle = "black"; 
   ctx.fillText(returnedLetter, xyCoord[0] - 10 , xyCoord[1] + 10);
-  xyCoord.shift();
-  xyCoord.shift();
+  xyCoord.splice(0,2);
 }
 
 var el1 = document.getElementById('circles');      
@@ -50,14 +49,3 @@ el1.addEventListener('click', storePosition, false);
 
 var el2 = document.getElementById('letters');      
 el2.addEventListener('click', replaceLetters, false); 
-
-/* 
-
-To be done:
-
-- to set canvass as equal to viewport?
-- circles cannot overlap
-
-
-*/
-
