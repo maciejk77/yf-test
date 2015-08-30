@@ -1,4 +1,5 @@
 This project was a Javascript test. 
+(Version with jQuery elements)
 
 ####Key learnings:
 
