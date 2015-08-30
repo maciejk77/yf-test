@@ -1,4 +1,4 @@
-This project was a Javascript test (also jQuery version on jquery branch).
+This project was a Javascript test (2 versions at **master** and jquery** branches).
 
 ####Key learnings:
 
