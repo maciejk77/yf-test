@@ -2,11 +2,11 @@ $(function() {
 
   var xyCoord = [];
   var canvas = document.getElementById('myCanvas');
+  var context = canvas.getContext('2d');
 
-  function createCircle() {
-    var context = canvas.getContext('2d');
+  function createCircle() {    
     var radius = 40;
-
+    
     context.beginPath();
     context.arc(x, y, radius, 0, 2 * Math.PI, false);
     context.fillStyle = 'coral';
@@ -17,11 +17,9 @@ $(function() {
   }
 
   function pushToCircle(returnedLetter) {
-    var ctx = canvas.getContext('2d');
-    
-    ctx.font = "30px Verdana";
-    ctx.fillStyle = "black"; 
-    ctx.fillText(returnedLetter, xyCoord[0] - 10 , xyCoord[1] + 10);
+    context.font = "30px Verdana";
+    context.fillStyle = "black"; 
+    context.fillText(returnedLetter, xyCoord[0] - 10 , xyCoord[1] + 10);
     xyCoord.splice(0,2);
   }
 
