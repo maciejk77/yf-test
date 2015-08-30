@@ -1,5 +1,5 @@
 This project was a Javascript test. 
-(Version with jQuery elements)
+(also jQuery version on jquery branch)
 
 ####Key learnings:
 
