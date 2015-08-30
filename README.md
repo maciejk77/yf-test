@@ -1,5 +1,4 @@
-This project was a Javascript test. 
-(also jQuery version on jquery branch)
+This project was a Javascript test (also jQuery version on jquery branch).
 
 ####Key learnings:
 
