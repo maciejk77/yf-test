@@ -1,4 +1,4 @@
-This project was a Javascript test. 
+This project was a Javascript test (**jquery** version here). 
 
 ####Key learnings:
 
