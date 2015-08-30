@@ -1,4 +1,6 @@
 var xyCoord = [];
+var canvas = document.getElementById('myCanvas');
+var context = canvas.getContext('2d');
 
 function storePosition(event) {                
   x = event.pageX;                      
@@ -8,8 +10,6 @@ function storePosition(event) {
 }
 
 function createCircle() {
-  var canvas = document.getElementById('myCanvas');
-  var context = canvas.getContext('2d');
   var radius = 40;
   
   context.beginPath();
@@ -34,12 +34,9 @@ function replaceLetters() {
 }
 
 function pushToCircle(returnedLetter) {
-  var canvas = document.getElementById('myCanvas');
-  var ctx = canvas.getContext("2d");
-  
-  ctx.font = "30px Verdana";
-  ctx.fillStyle = "black"; 
-  ctx.fillText(returnedLetter, xyCoord[0] - 10 , xyCoord[1] + 10);
+  context.font = "30px Verdana";
+  context.fillStyle = "black"; 
+  context.fillText(returnedLetter, xyCoord[0] - 10 , xyCoord[1] + 10);
   xyCoord.splice(0,2);
 }
 
