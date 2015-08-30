@@ -17,7 +17,7 @@ $(function() {
   }
 
   function pushToCircle(returnedLetter) {
-    var ctx = canvas.getContext("2d");
+    var ctx = canvas.getContext('2d');
     
     ctx.font = "30px Verdana";
     ctx.fillStyle = "black"; 
