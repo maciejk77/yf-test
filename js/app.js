@@ -12,6 +12,8 @@ function storePosition(event) {
 function createCircle() {
   var radius = 40;
   
+  //This is a comment
+
   context.beginPath();
   context.arc(x, y, radius, 0, 2 * Math.PI, false);
   context.fillStyle = 'coral';
