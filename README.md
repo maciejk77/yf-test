@@ -1,5 +1,9 @@
 This project was a Javascript test (2 versions at **master** and **jquery** branches).
 
+####Requirements:
+Move cursor on canvas and create multiple circles with every click. Type in text to input field. Remove first letter from input string with every string and push to circles one by one.
+
+
 ####Key learnings:
 
 - XY positioning (**pageX/pageY**)
